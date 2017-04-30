@@ -14,5 +14,6 @@
 //= require jquery.easing.min
 //= require jquery.min
 //= require bootstrap.min.js
+//= require Chart
 //= require custom.js
 //= require_tree .
