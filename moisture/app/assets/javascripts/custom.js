@@ -1,7 +1,7 @@
 (function ($) {
     
     // Add smooth scrolling to all links in navbar
-    $(".navbar a,a.btn-appoint, .quick-info li a, .overlay-detail a").on('click', function(event) {
+    $(".navbar a,a.btn-appoint, .quick-info li a, .overlay-detail a .slidebtn").on('click', function(event) {
         event.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
@@ -18,6 +18,7 @@
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
         }
+
     });
     
 })(jQuery);
