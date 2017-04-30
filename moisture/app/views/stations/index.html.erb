@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Medilab Free Bootstrap HTML5 Template</title>
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <title>Moisture-Farmer</title>
+
+   
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -73,51 +73,7 @@
   </section>
   <!--/ service-->
   <!--cta-->
-  <section id="cta-1" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="schedule-tab">
-          <div class="col-md-4 col-sm-4 bor-left">
-            <div class="mt-boxy-color"></div>
-            <div class="medi-info">
-              <h3>Emergency Case</h3>
-            <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <a href="#" class="medi-info-btn">READ MORE</a>         
-          </div>
-          </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="medi-info">
-              <h3>Emergency Case</h3>
-            <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            <a href="#" class="medi-info-btn">READ MORE</a> 
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 mt-boxy-3">
-          <div class="mt-boxy-color"></div>
-          <div class="time-info">
-                <h3>Opening Hours</h3>
-              <table style="margin: 8px 0px 0px;" border="1">
-                <tbody>
-                  <tr>
-                  <td>Monday - Friday</td>
-                  <td>8.00 - 17.00</td>
-                  </tr>
-                  <tr>
-                  <td>Saturday</td>
-                  <td>9.30 - 17.30</td>
-                  </tr>
-                  <tr>
-                  <td>Sunday</td>
-                  <td>9.30 - 15.00</td>
-                  </tr>
-                </tbody>
-              </table>                
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <!--cta-->
   <!--about-->
   <section id="about" class="section-padding">
@@ -125,29 +81,60 @@
       <div class="row">
         <div class="col-md-3 col-sm-4 col-xs-12">
               <div class="section-title">
-                <h2 class="head-title lg-line">The Medilap <br>Ultimate Dream</h2>
+                <h2 class="head-title lg-line">The prospects </h2>
                 <hr class="botm-line">
                 <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
                 <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
               </div>
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12">
-             <div style="visibility: visible;" class="col-sm-9 more-features-box">
-                <div class="more-features-box-text">
-                  <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-                  <div class="more-features-box-text-description">
-                    <h3>It's something important you want to know.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
-                </div>
-                </div>
-                <div class="more-features-box-text">
-                  <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-                  <div class="more-features-box-text-description">
-                    <h3>It's something important you want to know.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
-                </div>
-                        </div>
-              </div>
+
+          <canvas id="myChart" width="400" height="400"></canvas>
+          <script>
+          var ctx = document.getElementById("myChart");
+          var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                  labels: ["Year10", "Year09", "Year08", "Year07", "Year06", "Year05", "Year04", "Year03", "Year02", "Last Year"],
+                  datasets: [{
+                      label: 'Ground water level',
+                      data: [12, 19, 3, 5, 2, 3, 19, 3, 5 , 6],
+                      backgroundColor: [
+                          'rgba(255, 99, 132, 0.2)',
+                          'rgba(54, 162, 235, 0.2)',
+                          'rgba(255, 206, 86, 0.2)',
+                          'rgba(75, 192, 192, 0.2)',
+                          'rgba(153, 102, 255, 0.2)',
+                          'rgba(255, 159, 64, 0.2)'
+                      ],
+                      borderColor: [
+                          'rgba(255,99,132,1)',
+                          'rgba(54, 162, 235, 1)',
+                          'rgba(255, 206, 86, 1)',
+                          'rgba(75, 192, 192, 1)',
+                          'rgba(153, 102, 255, 1)',
+                          'rgba(255, 159, 64, 1)'
+                      ],
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      yAxes: [{
+                          ticks: {
+                              beginAtZero:true
+                          }
+                      }]
+                  }
+              }
+          });
+          </script>
+
+
+
+
+             
+
           </div>
       </div>
     </div>
